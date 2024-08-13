@@ -259,8 +259,8 @@ Feature: ADMIN
     Then Select valid user type "Operational Manager" in create user
     And Enter valid Initials "T" in create user
     Then Select valid user role "Support Team" in create user
-    And Select valid Country "ANTARCTICA" in create user
-    Then Select valid State "ALABAMA" in create user
+    And Select valid Country in create user
+    Then Select valid State in create user
     And Enter valid Phone "1234567890" in create user
     Then Enter valid Cell "1234567890" in create user
     And Uncheck the checkbox in active field in create user
@@ -280,8 +280,8 @@ Feature: ADMIN
     Then Select valid user type "Operational Manager" in create user
     And Enter valid Initials "T" in create user
     Then Select valid user role "Support Team" in create user
-    And Select valid Country "ANTARCTICA" in create user
-    Then Select valid State "ALABAMA" in create user
+    And Select valid Country in create user
+    Then Select valid State in create user
     And Enter valid Phone "1234567890" in create user
     Then Enter valid Cell "1234567890" in create user
     And Select the checkbox in active field
@@ -325,8 +325,8 @@ Feature: ADMIN
     Then Select valid user type "Operational Manager" in create user
     And Enter valid Initials "T" in create user
     Then Select valid user role "Support Team" in create user
-    And Select valid Country "ANTARCTICA" in create user
-    Then Select valid State "ALABAMA" in create user
+    And Select valid Country in create user
+    Then Select valid State in create user
     And Enter valid Phone "1234567890" in create user
     Then Enter valid Cell "1234567890" in create user
     And Select the checkbox in active field
@@ -364,8 +364,8 @@ Feature: ADMIN
     Then Select valid user type "Operational Manager" in create user
     And Enter valid Initials "T" in create user
     Then Select valid user role "Support Team" in create user
-    And Select valid Country "ANTARCTICA" in create user
-    Then Select valid State "ALABAMA" in create user
+    And Select valid Country in create user
+    Then Select valid State in create user
     And Enter valid Phone "1234567890" in create user
     Then Enter valid Cell "1234567890" in create user
     And Select the checkbox in active field
@@ -403,8 +403,8 @@ Feature: ADMIN
     Then Select valid user type "Operational Manager" in create user
     And Enter valid Initials "T" in create user
     Then Select valid user role "Support Team" in create user
-    And Select valid Country "ANTARCTICA" in create user
-    Then Select valid State "ALABAMA" in create user
+    And Select valid Country in create user
+    Then Select valid State in create user
     And Enter valid Phone "1234567890" in create user
     Then Enter valid Cell "1234567890" in create user
     And Select the checkbox in active field
@@ -441,8 +441,8 @@ Feature: ADMIN
     Then Select valid user type "Operational Manager" in create user
     And Enter valid Initials "T" in create user
     Then Select valid user role "Support Team" in create user
-    And Select valid Country "ANTARCTICA" in create user
-    Then Select valid State "ALABAMA" in create user
+    And Select valid Country in create user
+    Then Select valid State in create user
     And Enter valid Phone "1234567890" in create user
     Then Enter valid Cell "1234567890" in create user
     And Select the checkbox in active field
@@ -480,8 +480,8 @@ Feature: ADMIN
     Then Select valid user type "Operational Manager" in create user
     And Enter valid Initials "T" in create user
     Then Select valid user role "Support Team" in create user
-    And Select valid Country "ANTARCTICA" in create user
-    Then Select valid State "ALABAMA" in create user
+    And Select valid Country in create user
+    Then Select valid State in create user
     And Enter valid Phone "1234567890" in create user
     Then Enter valid Cell "1234567890" in create user
     And Select the checkbox in active field

@@ -18,5 +18,4 @@ plugin = {"pretty","html:Reports/TestReport.html",
 		})
 public class JE_QP_1_SignInRunnerTest {
 
-	
 }

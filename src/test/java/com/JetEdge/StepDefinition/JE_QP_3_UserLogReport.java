@@ -459,7 +459,7 @@ public class JE_QP_3_UserLogReport {
 		ele=driver.findElement(By.id("loadFrame"));
 		driver.switchTo().frame(ele);
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
-		wait.until(ExpectedConditions.elementToBeClickable(By.id("imgdiv148565")));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]/a/img")));
 		ele1 = driver.findElement(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]/a/img"));
 		ele1.click();
 		driver.switchTo().defaultContent();

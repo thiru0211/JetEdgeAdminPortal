@@ -1020,7 +1020,7 @@ Feature: ADMIN
     Then click edit button in the webtable in create user
     And Click clear button in create user
     Then close the Admin Page
-@Test
+
   @TC_76
   Scenario: Admin:Create User
     Given To Check Admin User is navigating to JetEdge URL is "http://192.168.1.33/CIADMIN/Login.aspx"
@@ -1034,8 +1034,8 @@ Feature: ADMIN
     And Click clear button in create user
     Then Click save button in create user
     Then close the Admin Page
-@Test
-  @TC_76
+
+  @TC_77
   Scenario: Admin:Create User
     Given To Check Admin User is navigating to JetEdge URL is "http://192.168.1.33/CIADMIN/Login.aspx"
     When To Check Admin User Enter username and password are "soundharya@sankarasoftware.com" and "Soundharya@123"

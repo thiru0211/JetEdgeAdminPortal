@@ -35,7 +35,7 @@ public class JE_QP_3_UserLogReport {
 	public void user_is_navigating_to_jet_edge_Signin_url_is(String URL) {
 		System.setProperty("webdriver.chrome.driver", ".\\Driver\\chromedriver.exe");
 		ChromeOptions option = new ChromeOptions();
-		option.addArguments("--headless=new");
+		//option.addArguments("--headless=new");
 		driver = new ChromeDriver(option);
 		driver.manage().window().maximize();
 		driver.get(URL);
@@ -272,7 +272,7 @@ public class JE_QP_3_UserLogReport {
 	public void click_expand_button_in_crew_login() {
 		ele=driver.findElement(By.id("loadFrame"));
 		driver.switchTo().frame(ele);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(2));
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]/a/img")));
 		ele1 = driver.findElement(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]/a/img"));
 		ele1.click();
@@ -458,9 +458,9 @@ public class JE_QP_3_UserLogReport {
 	public void click_expand_button_in_login_report() {
 		ele=driver.findElement(By.id("loadFrame"));
 		driver.switchTo().frame(ele);
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
-		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]/a/img")));
-		ele1 = driver.findElement(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]/a/img"));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(2));
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]")));
+		ele1 = driver.findElement(By.xpath("/html/body/form/div[3]/table[3]/tbody/tr[2]/td/div/table/tbody/tr[2]/td[1]"));
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}

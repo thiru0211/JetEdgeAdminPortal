@@ -518,8 +518,8 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText(UserRole);
 		driver.switchTo().defaultContent();
 	}
-	@And("Select valid Country {string} in create user")
-	public void select_valid_country_in_create_user(String Country) throws InterruptedException {
+	@And("Select valid Country in create user")
+	public void select_valid_country_in_create_user() throws InterruptedException {
 		Thread.sleep(2000);
 		ele=driver.findElement(By.id("loadFrame"));
 		driver.switchTo().frame(ele);
@@ -527,11 +527,11 @@ public class JE_QP_2_Admin {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("ddlCountry")));
 		ele1 = driver.findElement(By.id("ddlCountry"));
 		Select sel=new Select(ele1);
-		sel.selectByVisibleText(Country);
+		sel.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
-	@Then("Select valid State {string} in create user")
-	public void select_valid_state_in_create_user(String State) throws InterruptedException {
+	@Then("Select valid State in create user")
+	public void select_valid_state_in_create_user() throws InterruptedException {
 		Thread.sleep(2000);
 		ele=driver.findElement(By.id("loadFrame"));
 		driver.switchTo().frame(ele);
@@ -539,7 +539,7 @@ public class JE_QP_2_Admin {
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("ddlState")));
 		ele1 = driver.findElement(By.id("ddlState"));
 		Select sel=new Select(ele1);
-		sel.selectByVisibleText(State);
+		sel.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
 	@And("Enter valid Phone {string} in create user")

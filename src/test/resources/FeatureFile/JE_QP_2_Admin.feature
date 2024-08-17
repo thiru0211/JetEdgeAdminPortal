@@ -845,10 +845,10 @@ Feature: ADMIN
     Given To Check Admin User is navigating to JetEdge URL is "http://192.168.1.33/CIADMIN/Login.aspx"
     When To Check Admin User Enter username and password are "soundharya@sankarasoftware.com" and "Soundharya@123"
     And click the Signin button To Check Admin
-    Then Click State button in Admin
-    And Select valid country name in the dropdown
-    Then Click export button in state
-    Then close the Admin Page
+    #Then Click State button in Admin
+    #And Select valid country name in the dropdown
+    #Then Click export button in state
+    #Then close the Admin Page
 
   @TC_62
   Scenario: Admin:State

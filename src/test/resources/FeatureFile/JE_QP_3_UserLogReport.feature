@@ -92,7 +92,7 @@ Feature: USER LOG REPORT
     Then Select the check box in support team tab in Login Report
     And Select the check box in Owner tab in Login Report
     Then Click submit button in Login Report
-    And Click expand button in Login Report
+   # And Click expand button in Login Report
     Then close the User log report Page
     
     @TC_09

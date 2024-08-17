@@ -6,13 +6,11 @@ import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
-import java.util.NoSuchElementException;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -153,6 +151,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click save button in create user")
 	public void click_save_button_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -199,6 +198,7 @@ public class JE_QP_2_Admin {
 		ele3.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Back button in choose company field")
 	public void click_back_button_in_choose_company_field() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -209,6 +209,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click add button in user role")
 	public void click_add_button_in_user_role() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -219,6 +220,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click save button in user role")
 	public void click_save_button_in_user_role() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -245,6 +247,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click close button in user role")
 	public void click_close_button_in_user_role() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -255,6 +258,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid detail {string} in user role")
 	public void enter_valid_detail_in_user_role(String UserRole) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -265,6 +269,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(UserRole);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click edit button in user role")
 	public void click_edit_button_in_user_role() throws InterruptedException {
 		Thread.sleep(2000);
@@ -284,6 +289,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid user role {string} in user role")
 	public void select_valid_user_role_in_user_role(String UserRole) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -295,6 +301,7 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText(UserRole);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Modify valid detail in user role")
 	public void modify_valid_detail_in_user_role() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -308,6 +315,7 @@ public class JE_QP_2_Admin {
 		ele2.sendKeys(text);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter numerical values {string} in first name field in create user")
 	public void enter_numerical_values_in_first_name_field_in_create_user(String FirstName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -318,6 +326,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(FirstName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Check first name field in create user")
 	public void check_first_name_field_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -334,6 +343,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter special characters values {string} in first name field in create user")
 	public void enter_special_characters_values_in_first_name_field_in_create_user(String FirstName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -344,6 +354,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(FirstName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter alpha characters values {string} in first name field in create user")
 	public void enter_alpha_characters_values_in_first_name_field_in_create_user(String FirstName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -354,6 +365,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(FirstName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter numerical values {string} in Middle name field in create user")
 	public void enter_numerical_values_in_middle_name_field_in_create_user(String MiddleName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -364,6 +376,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(MiddleName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Check Middle name field in create user")
 	public void check_middle_name_field_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -380,6 +393,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter special characters values {string} in Middle name field in create user")
 	public void enter_special_characters_values_in_middle_name_field_in_create_user(String MiddleName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -390,6 +404,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(MiddleName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter alpha characters values {string} in Middle name field in create user")
 	public void enter_alpha_characters_values_in_middle_name_field_in_create_user(String MiddleName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -400,6 +415,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(MiddleName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter numerical values {string} in Last name field in create user")
 	public void enter_numerical_values_in_last_name_field_in_create_user(String LastName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -410,6 +426,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(LastName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Check Last name field in create user")
 	public void check_last_name_field_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -426,6 +443,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter special characters values {string} in Last name field in create user")
 	public void enter_special_characters_values_in_last_name_field_in_create_user(String LastName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -436,6 +454,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(LastName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter alpha characters values {string} in Last name field in create user")
 	public void enter_alpha_characters_values_in_last_name_field_in_create_user(String LastName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -446,6 +465,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(LastName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid first name {string} in create user")
 	public void enter_valid_first_name_in_create_user(String FirstName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -456,6 +476,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(FirstName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid Middle name {string} in create user")
 	public void enter_valid_middle_name_in_create_user(String MiddleName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -466,6 +487,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(MiddleName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid Last name {string} in create user")
 	public void enter_valid_last_name_in_create_user(String LastName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -476,6 +498,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(LastName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid Email {string} in create user")
 	public void enter_valid_email_in_create_user(String Email) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -486,6 +509,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(Email);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid user type {string} in create user")
 	public void select_valid_user_type_in_create_user(String UserType) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -497,6 +521,7 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText(UserType);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid Initials {string} in create user")
 	public void enter_valid_initials_in_create_user(String Initials) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -507,6 +532,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(Initials);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid user role {string} in create user")
 	public void select_valid_user_role_in_create_user(String UserRole) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -518,6 +544,7 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText(UserRole);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Select valid Country in create user")
 	public void select_valid_country_in_create_user() throws InterruptedException {
 		Thread.sleep(2000);
@@ -530,6 +557,7 @@ public class JE_QP_2_Admin {
 		sel.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid State in create user")
 	public void select_valid_state_in_create_user() throws InterruptedException {
 		Thread.sleep(2000);
@@ -542,6 +570,7 @@ public class JE_QP_2_Admin {
 		sel.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid Phone {string} in create user")
 	public void enter_valid_phone_in_create_user(String Phone) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -552,6 +581,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(Phone);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid Cell {string} in create user")
 	public void enter_valid_cell_in_create_user(String Cell) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -562,6 +592,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(Cell);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Uncheck the checkbox in active field in create user")
 	public void uncheck_the_checkbox_in_active_field_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -578,6 +609,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select the checkbox in active field")
 	public void select_the_checkbox_in_active_field() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -605,6 +637,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click the Email Radio button")
 	public void click_the_Email_radio_button() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -615,6 +648,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid group rights in process mapping")
 	public void select_valid_group_rights_in_process_mapping() throws InterruptedException {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -664,6 +698,7 @@ public class JE_QP_2_Admin {
 		sel9.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Select valid modify rights in process mapping")
 	public void select_valid_modify_rights_in_process_mapping() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -680,6 +715,7 @@ public class JE_QP_2_Admin {
 		sel1.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid user role in process mapping")
 	public void select_valid_user_role_in_process_mapping() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -704,6 +740,7 @@ public class JE_QP_2_Admin {
 		sel3.selectByIndex(0);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Select valid check box in process mapping")
 	public void select_valid_check_box_in_process_mapping() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -714,6 +751,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Yes Radio button in Tail Availability")
 	public void click_yes_radio_button_in_tail_availability() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -725,10 +763,6 @@ public class JE_QP_2_Admin {
 		driver.switchTo().defaultContent();
 	}
 	
-	
-	
-	
-	
 	@And("Click Yes Radio button in Direct Access Rights")
 	public void click_yes_radio_button_in_direct_access_rights() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -739,6 +773,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click No Radio button in Ask Security Questions")
 	public void click_no_radio_button_in_ask_security_questions() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -749,6 +784,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Yes Radio button in Login to Owner Portal")
 	public void click_yes_radio_button_in_login_to_owner_portal() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -759,6 +795,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Yes Radio button in Owner Survey")
 	public void click_yes_radio_button_in_owner_survey() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -769,6 +806,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Yes Radio button in GM% Report")
 	public void click_yes_radio_button_in_gm_report() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -779,6 +817,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Yes Radio button in Trip Folder Creation")
 	public void click_yes_radio_button_in_trip_folder_creation() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -789,6 +828,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Yes Radio button in Trip Invoice")
 	public void click_yes_radio_button_in_trip_invoice() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -799,6 +839,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Yes Radio button in Allow Access Rights")
 	public void click_yes_radio_button_in_allow_access_rights() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -809,6 +850,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Admin Radio button in Role")
 	public void click_admin_radio_button_in_role() throws InterruptedException {
 		Thread.sleep(2000);
@@ -820,6 +862,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click All Employees Radio button in Show Timsheet For")
 	public void click_all_employees_radio_button_in_show_timsheet_for() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -830,6 +873,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Select valid work day in dropdown in Time Management Setup")
 	public void select_valid_work_day_in_dropdown_in_time_management_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -841,6 +885,7 @@ public class JE_QP_2_Admin {
 		sel.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid Reporting To in dropdown in Time Management Setup")
 	public void select_valid_reporting_to_in_dropdown_in_time_management_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -852,6 +897,7 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText("Soundharya Support Team");
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click no Radio button in Regenerate Paychex File")
 	public void click_no_radio_button_in_regenerate_paychex_file() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -862,6 +908,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Jet Select radio button in create user")
 	public void click_jet_select_radio_button_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -872,6 +919,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Jet Edge and Jet Select radio button in create user")
 	public void click_jet_edge_and_jet_select_radio_button_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -882,6 +930,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click clear button in create user")
 	public void click_clear_button_in_create_user() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -892,6 +941,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click User Photo button in Admin")
 	public void click_user_photo_button_in_admin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -902,6 +952,7 @@ public class JE_QP_2_Admin {
 		ele1 = driver.findElement(By.id("MGNTUSRPHOTO"));
 		ele1.click();
 	}
+	
 	@And("Select valid user type in the dropdown in User Photo")
 	public void select_valid_user_type_in_the_dropdown_in_user_photo() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -913,6 +964,7 @@ public class JE_QP_2_Admin {
 		sel.selectByIndex(1);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click search button in User Photo")
 	public void click_search_button_in_user_photo() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -923,6 +975,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid user name or email {string} in search box in User Photo")
 	public void enter_valid_user_name_or_email_in_search_box_in_user_photo(String Email) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -933,6 +986,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(Email);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click edit button in the webtable")
 	public void click_edit_button_in_the_webtable() throws InterruptedException {
 		Thread.sleep(2000);
@@ -945,6 +999,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click close button in upload photo pop up")
 	public void click_close_button_in_upload_photo_pop_up() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -955,6 +1010,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Upload valid photo in the pop up")
 	public void upload_valid_photo_in_the_pop_up() throws InterruptedException, AWTException {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -976,6 +1032,7 @@ public class JE_QP_2_Admin {
 		robot.keyRelease(KeyEvent.VK_ENTER);
 		Thread.sleep(2000);
 	}
+	
 	@And("Click save button in upload photo pop up")
 	public void click_save_button_in_upload_photo_pop_up() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -983,6 +1040,7 @@ public class JE_QP_2_Admin {
 		ele1 = driver.findElement(By.id("btnRepAddtoList"));
 		ele1.click();
 	}
+	
 	@Then("Click Group Rights Setup button in Admin")
 	public void click_group_rights_setup_button_in_admin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -993,6 +1051,7 @@ public class JE_QP_2_Admin {
 		ele1 = driver.findElement(By.id("MGNTADMGS"));
 		ele1.click();
 	}
+	
 	@And("Click add group button in Group Rights Setup")
 	public void click_add_group_button_in_group_rights_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1003,6 +1062,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click back button in Group Rights Setup")
 	public void click_back_button_in_group_rights_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1013,6 +1073,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click save button in Group Rights Setup")
 	public void click_save_button_in_group_rights_setup() throws InterruptedException {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1032,6 +1093,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid group name {string} in Group Rights Setup")
 	public void enter_valid_group_name_in_group_rights_setup(String GrpName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1042,6 +1104,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(GrpName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Select valid process in dropdown {string} in Group Rights Setup")
 	public void select_valid_process_in_dropdown_in_group_rights_setup(String Process) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1053,6 +1116,7 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText(Process);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Unselect the checkbox in Group Rights Setup")
 	public void unselect_the_checkbox_in_group_rights_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1069,6 +1133,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select the checkbox in Group Rights Setup")
 	public void select_the_checkbox_in_group_rights_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1085,6 +1150,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click edit button in Group Rights Setup")
 	public void click_edit_button_in_group_rights_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1095,6 +1161,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Modify valid details in Group Rights Setup")
 	public void modify_valid_details_in_group_rights_setup() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1118,6 +1185,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click IP WhiteList button in Admin")
 	public void click_ip_white_list_button_in_admin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -1128,6 +1196,7 @@ public class JE_QP_2_Admin {
 		ele1 = driver.findElement(By.id("MGNTADMIP"));
 		ele1.click();
 	}
+	
 	@And("Click export button in IP WhiteList")
 	public void click_export_button_in_ip_white_list() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1138,6 +1207,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Add IP Whitelist button")
 	public void click_add_ip_whitelist_button() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1148,6 +1218,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click close button in IP Whitelist Details")
 	public void click_close_button_in_ip_whitelist_details() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1158,6 +1229,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click save button in IP Whitelist Details")
 	public void click_save_button_in_ip_whitelist_details() throws InterruptedException {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1178,6 +1250,7 @@ public class JE_QP_2_Admin {
 		
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid IP Address {string} in IP Whitelist")
 	public void enter_valid_ip_address_in_ip_whitelist(String IPAddress) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1188,6 +1261,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(IPAddress);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid  IP Location {string} in IP Whitelist")
 	public void enter_valid_ip_location_in_ip_whitelist(String IPLocation) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1198,6 +1272,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(IPLocation);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid Responsible Person {string} in IP Whitelist")
 	public void enter_valid_responsible_person_in_ip_whitelist(String RespPerson) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1208,6 +1283,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(RespPerson);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid notes {string} in IP Whitelist")
 	public void enter_valid_notes_in_ip_whitelist(String Notes) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1218,6 +1294,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(Notes);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click clear button in IP Whitelist Details")
 	public void click_clear_button_in_ip_whitelist_details() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1228,6 +1305,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click edit button in IP Whitelist")
 	public void click_edit_button_in_ip_whitelist() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1238,6 +1316,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Modify valid details in IP Whitelist")
 	public void modify_valid_details_in_ip_whitelist() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1251,6 +1330,7 @@ public class JE_QP_2_Admin {
 		ele2.sendKeys(text);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Unlocked User button in Admin")
 	public void click_unlocked_user_button_in_admin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -1262,6 +1342,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click unlock button in Unlocked User and check page behaviour")
 	public void click_unlock_button_in_unlocked_user() throws InterruptedException {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1281,6 +1362,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Check unlock message is displayed or not")
 	public void check_unlock_message_is_displayed_or_not() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1295,6 +1377,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@When("User enter valid email id and invalid password six times to lock the user {string} and {string}")
 	public void user_enter_valid_email_id_and_invalid_password_six_times_to_lock_the_user_and(String UserName, String Password) {
 		ele1=driver.findElement(By.id("txtUserName"));
@@ -1304,6 +1387,7 @@ public class JE_QP_2_Admin {
 		ele2.clear();
 		ele2.sendKeys(Password);
 	}
+	
 	@And("click the Signin button six times to lock the user")
 	public void click_the_signin_button_six_times_to_lock_the_user() throws InterruptedException {
 		ele1= driver.findElement(By.id("ibLogin"));
@@ -1312,6 +1396,7 @@ public class JE_QP_2_Admin {
 		String text1 = ele2.getText();
 		System.out.println(text1);
 	}
+	
 	@Then("Click Country button in Admin")
 	public void click_country_button_in_admin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -1322,6 +1407,7 @@ public class JE_QP_2_Admin {
 		ele1 = driver.findElement(By.id("MGNTADMCOU"));
 		ele1.click();
 	}
+	
 	@And("Click export button in Country")
 	public void click_export_button_in_country() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1332,6 +1418,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Add Country button")
 	public void click_add_country_button() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1342,6 +1429,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click close button in Add Country")
 	public void click_close_button_in_add_country() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1352,6 +1440,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click save button in Add Country")
 	public void click_save_button_in_add_country() throws InterruptedException {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1371,6 +1460,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid {string} CodeX2 details")
 	public void enter_valid_code_x2_details(String CodeX2) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1381,6 +1471,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(CodeX2);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid {string} Country Code details")
 	public void enter_valid_country_code_details(String CounCode) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1391,6 +1482,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(CounCode);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid {string} Country Name details")
 	public void enter_valid_country_name_details(String CounName) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1401,6 +1493,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys(CounName);
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Uncheck the checkbox in active field in country")
 	public void uncheck_the_checkbox_in_active_field() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1417,6 +1510,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click clear button in Add Country")
 	public void click_clear_button_in_add_country() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1427,6 +1521,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select the checkbox in active field in country")
 	public void select_the_checkbox_in_active_field_in_country() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1443,6 +1538,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click edit button in the webtable in Add Country")
 	public void click_edit_button_in_the_webtable_in_add_country() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1453,6 +1549,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Modify valid details in Add Country")
 	public void modify_valid_details_in_add_country() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1466,6 +1563,7 @@ public class JE_QP_2_Admin {
 		ele2.sendKeys(text);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click State button in Admin")
 	public void click_state_button_in_admin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -1476,6 +1574,7 @@ public class JE_QP_2_Admin {
 		ele1 = driver.findElement(By.id("MGNTADMSTA"));
 		ele1.click();
 	}
+	
 	@And("Select valid country name in the dropdown")
 	public void select_valid_country_name_in_the_dropdown() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1487,6 +1586,7 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText("ANTARCTICA");
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click export button in state")
 	public void click_export_button_in_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1497,6 +1597,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click add state button")
 	public void click_add_state_button() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1507,6 +1608,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Back button in add state")
 	public void click_back_button_in_add_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1517,6 +1619,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid country in add state")
 	public void select_valid_country_in_add_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1528,6 +1631,7 @@ public class JE_QP_2_Admin {
 		sel.selectByVisibleText("INDIA");
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid State Name in add state")
 	public void enter_valid_state_name_in_add_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1538,6 +1642,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys("TamilNadu");
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid State Code in add state")
 	public void enter_valid_state_code_in_add_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1548,6 +1653,7 @@ public class JE_QP_2_Admin {
 		ele1.sendKeys("TN");
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Uncheck the chekbox in active field")
 	public void uncheck_the_chekbox_in_active_field() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1564,6 +1670,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Clear button in add state")
 	public void click_clear_button_in_add_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1574,6 +1681,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click save button in add state")
 	public void click_save_button_in_add_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1592,6 +1700,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click edit button in state")
 	public void click_edit_button_in_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1602,6 +1711,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select the chekbox in active field")
 	public void select_the_chekbox_in_active_field() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1618,6 +1728,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Modify valid details in add state")
 	public void modify_valid_details_in_add_state() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1631,6 +1742,7 @@ public class JE_QP_2_Admin {
 		ele2.sendKeys(text);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click Reset Password button in Admin")
 	public void click_reset_password_button_in_admin() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
@@ -1641,6 +1753,7 @@ public class JE_QP_2_Admin {
 		ele1 = driver.findElement(By.id("RSTPWD"));
 		ele1.click();
 	}
+	
 	@And("Click owner radio button in Reset Password")
 	public void click_owner_radio_button_in_reset_password() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1651,6 +1764,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click view button in Reset Password")
 	public void click_view_button_in_reset_password() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1677,6 +1791,7 @@ public class JE_QP_2_Admin {
 		ele2.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click close button in Reset Password")
 	public void click_close_button_in_reset_password() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1687,6 +1802,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click save button in Reset Password")
 	public void click_save_button_in_reset_password() throws InterruptedException {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1705,6 +1821,7 @@ public class JE_QP_2_Admin {
 		}
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Enter valid New password {string} in Reset Password")
 	public void enter_valid_new_password_in_reset_password(String NewPass) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1712,12 +1829,12 @@ public class JE_QP_2_Admin {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("txtNewPassword")));
 		ele1 = driver.findElement(By.id("txtNewPassword"));
-		String text = ele1.getAttribute("value");
 		ele1.clear();
 		ele2 = driver.findElement(By.id("txtNewPassword"));
 		ele2.sendKeys(NewPass);
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid New password {string} in Jet Edge in Reset Password")
 	public void enter_valid_new_password_in_jet_edge_in_reset_password(String NewPass) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1725,7 +1842,6 @@ public class JE_QP_2_Admin {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("txtNewPassword")));
 		ele1 = driver.findElement(By.id("txtNewPassword"));
-		String text = ele1.getAttribute("value");
 		ele1.clear();
 		ele2 = driver.findElement(By.id("txtNewPassword"));
 		ele2.sendKeys(NewPass);
@@ -1739,7 +1855,6 @@ public class JE_QP_2_Admin {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("txtConfirmPassword")));
 		ele1 = driver.findElement(By.id("txtConfirmPassword"));
-		String text = ele1.getAttribute("value");
 		ele1.clear();
 		ele2 = driver.findElement(By.id("txtConfirmPassword"));
 		ele2.sendKeys(ConfPass);
@@ -1748,6 +1863,7 @@ public class JE_QP_2_Admin {
 		ele3.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Enter valid Confirm password {string} in Jet Edge in Reset Password")
 	public void enter_valid_confirm_password_in_jet_edge_in_reset_password(String ConfPass) {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1755,7 +1871,6 @@ public class JE_QP_2_Admin {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("txtConfirmPassword")));
 		ele1 = driver.findElement(By.id("txtConfirmPassword"));
-		String text = ele1.getAttribute("value");
 		ele1.clear();
 		ele2 = driver.findElement(By.id("txtConfirmPassword"));
 		ele2.sendKeys(ConfPass);
@@ -1764,6 +1879,7 @@ public class JE_QP_2_Admin {
 		ele3.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click Jet Edge radio button in Reset Password")
 	public void click_jet_edge_radio_button_in_reset_password() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -1855,6 +1971,7 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click close button in alert pop up")
 	public void click_close_button_in_alert_pop_up() throws InterruptedException {
 		Thread.sleep(2000);
@@ -1866,22 +1983,4 @@ public class JE_QP_2_Admin {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
-
-	
-	
-	
-	
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
 }

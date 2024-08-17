@@ -1,24 +1,15 @@
 package com.JetEdge.StepDefinition;
 
-import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.Toolkit;
-import java.awt.datatransfer.StringSelection;
-import java.awt.event.KeyEvent;
 import java.time.Duration;
-import java.util.NoSuchElementException;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.en.And;
@@ -98,6 +89,7 @@ public class JE_QP_4_Audit {
 		ele1 = driver.findElement(By.id("EXCRUN"));
 		ele1.click();
 	}
+	
 	@And("Select valid from date in Run Report")
 	public void select_valid_from_date_in_Run_report() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -111,6 +103,7 @@ public class JE_QP_4_Audit {
 		ele2.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Select valid to date in Run Report")
 	public void select_valid_to_date_in_run_report() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -124,6 +117,7 @@ public class JE_QP_4_Audit {
 		ele2.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click view button in run report")
 	public void click_view_button_in_run_report() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -134,6 +128,7 @@ public class JE_QP_4_Audit {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@Then("Click view button in Audit details")
 	public void click_view_button_in_audit_details() {
 		ele=driver.findElement(By.id("loadFrame"));
@@ -144,6 +139,7 @@ public class JE_QP_4_Audit {
 		ele1.click();
 		driver.switchTo().defaultContent();
 	}
+	
 	@And("Click close buttoon in crew missing trips")
 	public void click_close_buttoon_in_crew_missing_trips() {
 		ele=driver.findElement(By.id("loadFrame"));

@@ -1,0 +1,8 @@
+com\JetEdge\RunnerClass\JE_QP_3_UserLogReportRunnerTest.class
+com\JetEdge\StepDefinition\JE_QP_2_Admin.class
+com\JetEdge\RunnerClass\JE_QP_2_AdminRunnerTest.class
+com\JetEdge\RunnerClass\JE_QP_1_SignInRunnerTest.class
+com\JetEdge\StepDefinition\JE_QP_4_Audit.class
+com\JetEdge\StepDefinition\JE_QP_1_SignIn.class
+com\JetEdge\StepDefinition\JE_QP_3_UserLogReport.class
+com\JetEdge\RunnerClass\JE_QP_4_AuditRunnerTest.class

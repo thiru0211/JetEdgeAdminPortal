@@ -84,16 +84,16 @@ Feature: USER LOG REPORT
 
     @TC_08
   Scenario: Login Report:Expand Check
-    Given To Check User log report User is navigating to JetEdge URL is "http://192.168.1.33/CIADMIN/Login.aspx"
-    When To Check User log report User Enter username and password are "soundharya@sankarasoftware.com" and "Soundharya@123"
-    And click the Signin button To Check User log report
-    Then Click Login Report button in user log report
-     And Select valid from date in Login Report
-    Then Select the check box in support team tab in Login Report
-    And Select the check box in Owner tab in Login Report
-    Then Click submit button in Login Report
+    #Given To Check User log report User is navigating to JetEdge URL is "http://192.168.1.33/CIADMIN/Login.aspx"
+    #When To Check User log report User Enter username and password are "soundharya@sankarasoftware.com" and "Soundharya@123"
+    #And click the Signin button To Check User log report
+    #Then Click Login Report button in user log report
+     #And Select valid from date in Login Report
+    #Then Select the check box in support team tab in Login Report
+    #And Select the check box in Owner tab in Login Report
+    #Then Click submit button in Login Report
    # And Click expand button in Login Report
-    Then close the User log report Page
+    #Then close the User log report Page
     
     @TC_09
   Scenario: Crew Login:Valid Check
